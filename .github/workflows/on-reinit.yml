@@ -6,7 +6,7 @@ jobs:
     name: Reinitialize Mastory Content Scope from scratch
     runs-on: ubuntu-latest
     steps:
-      - uses: mastoryberlin/content-action@v0.1.0-rc1
+      - uses: mastoryberlin/content-action@v-0.1.0-rc2
         with:
           scope: gerd
           api_key: ${{ secrets.MASTORY_API_KEY }}
