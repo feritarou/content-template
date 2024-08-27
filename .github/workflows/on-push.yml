@@ -8,7 +8,7 @@ jobs:
     name: Detect Changes and Deploy to Mastory
     runs-on: ubuntu-latest
     steps:
-      - uses: mastoryberlin/content-action@v-0.1.0-beta11
+      - uses: mastoryberlin/content-action@v0.1.0-beta11
         with:
           scope: gerd
           api_key: ${{ secrets.MASTORY_API_KEY }}
