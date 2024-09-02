@@ -1,0 +1,30 @@
+{
+  "$schema": ".schema/unit.json",
+  "variables": {
+    "exampleXValue": {
+      { localChurchCoordinatesSampleX
+      }
+    }
+  },
+  "self": {
+    "class": "UnitRoot"
+  },
+  "include": [
+    "TreasureHuntUi",
+    "THLevel1Navi",
+    "THLevel2Navi",
+    "THLevel3Navi",
+    "THLevel4Navi",
+    "THLevel5Navi",
+    "THLevel6Navi"
+  ],
+  "children": [
+    { //navigation
+      "self": {
+        "class": "Navigation",
+        "id": "navigation",
+        "mode": "normal"
+      }
+    }
+  ]
+}
