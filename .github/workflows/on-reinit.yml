@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: mastoryberlin/content-action@main
         with:
-          scope: gerd
+          # scope: gerd
           api_key: ${{ secrets.MASTORY_API_KEY }}
           reinit: true
