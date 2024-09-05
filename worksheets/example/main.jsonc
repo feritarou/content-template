@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/worksheet.json?dummy=1",
+  "exercises": [
+    {
+      "id": "PlusMinus",
+      "tags": [
+        "integer"
+      ]
+    },
+    "PlusMinus"
+  ]
+}

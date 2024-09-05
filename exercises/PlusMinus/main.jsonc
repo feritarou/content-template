@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json",
+  "self": {
+    "class": "UnitRoot",
+    "context": "Students learn some arithmetic basics"
+  },
+  "children": [
+    {
+      "self": {
+        "class": "Text",
+        "text": "Add the numbers!"
+      }
+    },
+    {
+      "self": {
+        "class": "NumberInput",
+        "id": "sum",
+        "label": "{{a}} + {{b}} ="
+      }
+    }
+  ]
+}
