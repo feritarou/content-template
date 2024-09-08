@@ -1,12 +1,16 @@
-export default function ({ tags }) {
-  let n = Array(2).fill(0).map(() => Math.random() * 100)
-  if (tags.includes('integer')) {
-    for (let i = 0; i < 2; i++) {
-      n[i] = Math.round(n[i])
-    }
+export default function ({ tags }, { randomNumber }) {
+  const domain = tags.includes('integer')
+    ? 'Integers'
+    : 'RationalNumbers'
+  let digits
+  if (domain !== 'Integers') {
+    digits = 2
   }
+  const range = { fromInclusive: -100, toInclusive: 100, digits }
+  const N = randomNumber.bind(undefined, domain, range)
+  
   return {
-    a: n[0],
-    b: n[1]
+    a: N(),
+    b: N(),
   }
 }
