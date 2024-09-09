@@ -8,14 +8,14 @@
     {
       "self": {
         "class": "Text",
-        "text": "Subtract the numbers!"
+        "text": "Add the numbers!"
       }
     },
     {
       "self": {
         "class": "NumberInput",
         "id": "sum",
-        "label": "{{a}} - {{b}} ="
+        "label": "{{a}} + {{b}} ="
       }
     }
   ]
