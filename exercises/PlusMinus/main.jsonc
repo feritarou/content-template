@@ -8,14 +8,14 @@
     {
       "self": {
         "class": "Text",
-        "text": "Add the numbers!"
+        "text": "Mark the point (2, 5) + ({{a}}, {{b}})!",
+        "minimal": true
       }
     },
     {
       "self": {
-        "class": "NumberInput",
-        "id": "sum",
-        "label": "{{a}} + {{b}} ="
+        "class": "CoordinateSystem",
+        "id": "cs"
       }
     }
   ]
