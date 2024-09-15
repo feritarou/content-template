@@ -1,12 +1,68 @@
 {
   "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/worksheet.json?dummy=1",
   "exercises": [
+    "SignsCSExercise1",
     {
-      "id": "PlusMinus",
+      "id": "SignsAdditionExercise1",
       "tags": [
-        "integer"
+        "integer",
+        "absZeroToHundred",
+        "allPositive"
       ]
     },
-    "PlusMinus"
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "integer",
+        "absZeroToHundred",
+        "mixedSigns"
+      ]
+    },
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "integer",
+        "absZeroToHundred",
+        "allNegative"
+      ]
+    },
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "integer",
+        "mixedSigns"
+      ]
+    },
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "integer",
+        "mixedSigns"
+      ]
+    },
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "absZeroToTen",
+        "oneDigit",
+        "allPositive"
+      ]
+    },
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "absZeroToHundred",
+        "twoDigit",
+        "allPositive"
+      ]
+    },
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "absZeroToHundred",
+        "twoDigit",
+        "mixedSigns"
+      ]
+    }
   ]
 }

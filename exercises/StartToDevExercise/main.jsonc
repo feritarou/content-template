@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json?v=2",
+  "self": {
+    "class": "UnitRoot",
+    "context": "exercise"
+  },
+  "children": [
+    {
+      "self": {
+        "class": "Exercise"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
+                "class": "SampleSolve",
+                "watchedInput": "ex1",
+                "instructions": "Add the following pair of numbers:",
+                "sampleSolution": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self": {
+        "class": "NumberInput",
+        "id": "ex1",
+        "label": "7 + ( -3 ) ="
+      }
+    }
+  ]
+}
