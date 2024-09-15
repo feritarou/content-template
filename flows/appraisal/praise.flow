@@ -1,0 +1,202 @@
+praise.flow {
+1 {
+   Nick "Hey, $username, you nailed it!"
+   . .done
+}
+2 {
+   Nick "Wow, $username, you aced it!"
+   . .done
+}
+3 {
+   Nick "Nice one, $username! Thanks for that!"
+   . .done
+}
+4 {
+   Nick "Boom! $username, spot on!"
+   . .done
+}
+5 {
+   Nick "Sweet, $username, got it!"
+   . .done
+}
+6 {
+   Nick "Yep, $username, perfect! Really appreciate it!"
+   . .done
+}
+7 {
+   Nick "Whoa, $username, on point!"
+   . .done
+}
+8 {
+   Nick "Hey, $username, crushed it!"
+   . .done
+}
+9 {
+   Nick "Awesome! $username, thanks for the help!"
+   . .done
+}
+10 {
+   Nick "Right on target, $username!"
+   . .done
+}
+11 {
+   Nick "Bingo! $username, you did it!"
+   . .done
+}
+12 {
+   Nick "Great job, $username! Thanks a bunch!"
+   . .done
+}
+13 {
+   Nick "Exactly right, $username!"
+   . .done
+}
+14 {
+   Nick "Perfect score, $username!"
+   . .done
+}
+15 {
+   Nick "Oh snap, $username! Thanks for sorting that!"
+   . .done
+}
+16 {
+   Nick "That’s right, $username!"
+   . .done
+}
+17 {
+   Nick "You got it, $username!"
+   . .done
+}
+18 {
+   Nick "Bullseye, $username! Appreciate your guidance!"
+   . .done
+}
+19 {
+   Nick "Nailed it, $username!"
+   . .done
+}
+20 {
+   Nick "On the money, $username!"
+   . .done
+}
+21 {
+   Nick "That’s it, $username! Thanks for leading the way!"
+   . .done
+}
+22 {
+   Nick "Right on, $username!"
+   . .done
+}
+23 {
+   Nick "A+ work, $username!"
+   . .done
+}
+24 {
+   Nick "Just like that, $username! Thanks for the support!"
+   . .done
+}
+25 {
+   Nick "And that’s how it’s done, $username!"
+   . .done
+}
+26 {
+   Nick "That’s the way to do it, $username!"
+   . .done
+}
+27 {
+   Nick "Spot-on! Thanks, $username!"
+   . .done
+}
+28 {
+   Nick "Exactly, $username!"
+   . .done
+}
+29 {
+   Nick "Got it just right, $username!"
+   . .done
+}
+30 {
+   Nick "Oh yeah, that was perfect! Thanks, $username!"
+   . .done
+}
+31 {
+   Nick "Smashed it, $username!"
+   . .done
+}
+32 {
+   Nick "Nailed it, couldn’t be better, $username!"
+   . .done
+}
+33 {
+   Nick "Perfect hit! Really appreciate your help, $username!"
+   . .done
+}
+34 {
+   Nick "You did it, $username!"
+   . .done
+}
+35 {
+   Nick "Totally nailed it, $username!"
+   . .done
+}
+36 {
+   Nick "You’ve mastered it! Thanks, $username!"
+   . .done
+}
+37 {
+   Nick "Superb, $username!"
+   . .done
+}
+38 {
+   Nick "That’s perfect, $username!"
+   . .done
+}
+39 {
+   Nick "Kudos, $username! You nailed it!"
+   . .done
+}
+40 {
+   Nick "Top marks! Thanks for guiding, $username!"
+   . .done
+}
+41 {
+   Nick "There it is! You nailed it, $username!"
+   . .done
+}
+42 {
+   Nick "That was flawless, $username!"
+   . .done
+}
+43 {
+   Nick "You’ve got it down, $username! Thanks for showing me!"
+   . .done
+}
+44 {
+   Nick "Yes! That’s it, $username!"
+   . .done
+}
+45 {
+   Nick "There you go! Perfect, $username!"
+   . .done
+}
+46 {
+   Nick "Spot on, $username!"
+   . .done
+}
+47 {
+   Nick "Great job! Thanks for all your help, $username!"
+   . .done
+}
+48 {
+   Nick "You’ve got this, $username!"
+   . .done
+}
+49 {
+   Nick "That’s exactly right, $username!"
+   . .done
+}
+* {
+   Nick "You nailed it! Great job, $username!"
+   . .done
+}
+}

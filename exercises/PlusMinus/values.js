@@ -8,9 +8,15 @@ export default function ({ tags }, { randomNumber }) {
   }
   const range = { fromInclusive: -100, toInclusive: 100, digits }
   const N = randomNumber.bind(undefined, domain, range)
+  const a = N()
+  const b = N()
+  const aPlus2 = a + 2
+  const bPlus5 = b + 5
   
   return {
-    a: N(),
-    b: N(),
+    a,
+    b,
+    aPlus2,
+    bPlus5,
   }
 }

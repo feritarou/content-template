@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json",
+  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json?v=2",
   "self": {
     "class": "UnitRoot",
     "context": "Students learn some arithmetic basics"
@@ -7,15 +7,35 @@
   "children": [
     {
       "self": {
-        "class": "Text",
-        "text": "Mark the point (2, 5) + ({{a}}, {{b}})!",
-        "minimal": true
-      }
+        "class": "Exercise"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
+                "class": "SampleSolve",
+                "instructions": "Calculate the resulting vector after adding the two given ones!",
+                "watchedInput": "vectorSum",
+                "sampleSolution":[
+                  {{aPlus2}},
+                  {{bPlus5}}
+                ]
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "self": {
-        "class": "CoordinateSystem",
-        "id": "cs"
+        "class": "CoordinatesInput2",
+        "id": "vectorSum",
+        "label": "Enter the coordinates of the point (2, 5) + ({{a}}, {{b}}) [Hint: it's ({{aPlus2}}, {{bPlus5}})]!",
+        "minimal": true
       }
     }
   ]

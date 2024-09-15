@@ -1,0 +1,15 @@
+celebrate-milestone.flow {
+1 {
+  Nick "Hey everybody!! Let's start the celebration!!!"
+  . Nick https://storage.googleapis.com/mastory-content/units/CoordinatePlane/Celebration.gif "🥳️" 10sec
+  . Nick "We nailed our first milestone!"
+  . Nick "We're all kinds of awesome!!!"
+  . .done
+}
+* {
+  Nick "Great job, everyone! You all rocked today."
+  . Nick "Let's take a moment to appreciate our progress."
+  . Nick https://storage.googleapis.com/mastory-content/units/CoordinatePlane/celebrate2.gif "🥳️" 20sec
+  . .done
+}
+}
