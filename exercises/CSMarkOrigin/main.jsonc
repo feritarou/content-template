@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json?v=2",
+  "self": {
+    "class": "UnitRoot",
+    "context": "exercise"
+  },
+  "children": [
+    {
+      "self": {
+        "class": "Exercise"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
+                "class": "SampleSolveArrayElement",
+                "numericalTolerance": 0.3,
+                "instructions": "Mark the coordinates origin!",
+                "watchedInput": "cs",
+                "sampleElement": [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self": {
+        "class": "CoordinateSystem",
+        "id": "cs"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "CsAddFlagTool",
+            "text": "Mark a Point",
+            "flagColor": "#f3a3c6"
+          }
+        }
+      ]
+    }
+  ]
+}
