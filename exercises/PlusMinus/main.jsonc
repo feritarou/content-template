@@ -1,5 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json?v=2",
+  "tags": [
+    "adding2DCoordinates"
+  ],
   "self": {
     "class": "UnitRoot",
     "context": "Students learn some arithmetic basics"
@@ -20,9 +23,15 @@
                 "class": "SampleSolve",
                 "instructions": "Calculate the resulting vector after adding the two given ones!",
                 "watchedInput": "vectorSum",
-                "sampleSolution":[
-                  {{aPlus2}},
-                  {{bPlus5}}
+                "sampleSolution": [
+                  {
+                    {aPlus2
+                    }
+                  },
+                  {
+                    {bPlus5
+                    }
+                  }
                 ]
               }
             }

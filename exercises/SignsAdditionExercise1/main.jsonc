@@ -1,5 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json?v=2",
+  "tags": [
+    "addingNumbers"
+  ],
   "self": {
     "class": "UnitRoot",
     "context": "exercise"
