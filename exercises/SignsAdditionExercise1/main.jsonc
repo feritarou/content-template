@@ -34,7 +34,11 @@
       "self": {
         "class": "NumberInput",
         "id": "ex1",
-        "label": "{{a}} + ( {{b}} ) ="
+        "label": "{{a}} + ( {{b}} ) =",
+        "absolute": {
+          "bottom": "45%",
+          "left": "45%"
+        }
       }
     }
   ]
