@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$defs": {
+    "fragment": {
+      "properties": {
+        "self": {
+          "patternProperties": {
+            "^(?:on|when)\\w+$": {
+              "properties": {
+                "let": {
+                  "propertyNames": {
+                    "$ref": "./id.json"
+                  }
+                },
+                "set": {
+                  "propertyNames": {
+                    "$ref": "./id.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "children": {
+          "items": {
+            "$ref": "#/$defs/fragment"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "../../../../schemas/fragment/unit.json"
+    },
+    {
+      "properties": {
+        "children": {
+          "items": {
+            "$ref": "#/$defs/fragment"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+bCoordinates.flow {
+  Nick "Yo, $username! What's your take, is the x coordinate of B bigger or smaller than -2?"
+  . Quest {
+    ?
+    "greater" {
+      Nick "How’d you figure that?"
+      . Nick "You reckon it’s more to the right or left of -2?"
+      . Quest2 {
+        ?
+        "B is to the left from -2" {
+          .achieve
+          . Nick "Sounds right to me."
+          . _ {
+            -> @look
+          }
+        }
+        "B is to the right from -2" {
+          -> @look
+        }
+      }
+      @look Nick https://storage.googleapis.com/mastory-content/Exercises/bigStarsBx.png "" 20sec 
+      . Nick "Check this out! Looks like it's on the left of -2."
+      . Nick "Kinda sits between -3 and -2, ya know?"
+      . Nick "Is -3 less or more than -2?"
+      . Quest3 {
+        ?
+        "less" {
+          .achieve
+          . Nick "Alright, so the numbers drop off to the left."
+          . Nick "You with me?"
+          . YesOrNo {
+            ?
+            "Yes" {
+              Nick "Sweet. So I guess the x coordinate of B is also less than -2."
+              . .done
+            }
+            "No" {
+              Nick "Okay. Let's run through this once more."
+              . .done
+            }
+          }
+        }
+        "more" {
+          Nick "🤔"
+          . Nick "I always picture negative numbers like debt."
+          . Nick "So, if I'm 3 bucks in the hole, is that worse than 2 bucks in the red?"
+          . Quest4 {
+            ?
+            "You have less money, if you have 3 dollars debt." {
+              .achieve
+              . Nick "That’s what I thought."
+              . @lessDebt Nick "Less debt means more cash, that's my motto. Better not dig too deep."
+              . Nick "So I figure -3's gotta be less than -2. That means the x coordinate of B is also less than -2."
+              . Nick "We got it!"
+              . .done
+            }
+            "You have less money if you have 2 dollars debt" {
+              Nick "Nah, that doesn't add up."
+              . Nick "See, I’ve got exactly 3 bucks."
+              . Nick "And I owe Rickey 3 bucks. He doesn’t mess around, so..."
+              . Nick "That leaves me broke."
+              . Nick "But if I only owed him 2, I'd still have a dollar."
+              . Nick "I guess..."
+              . _ {
+                -> @lessDebt
+              }
+            }
+          }
+        }
+      }
+    }
+    "less" {
+      .achieve
+      . Nick "Yeah, sounds about right."
+      . Nick "Negatives always trip me up."
+      . Nick "But left is less, right?"
+      . Nick "Guess that makes sense."
+      . Nick "Cheers, $username! Thanks a ton."
+      . .done
+    }
+  }
+}

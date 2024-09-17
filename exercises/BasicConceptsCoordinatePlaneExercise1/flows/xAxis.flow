@@ -1,0 +1,62 @@
+xAxis.flow {
+  .let coordinatePlane hide
+  . .let xAxisGrowth show
+  . Nick "So we're talking about the x-axis on the coordinate grid, huh?"
+  . VZ "You got it."
+  . Nick "And it's pointing right? What's the deal with that?"
+  . Nick "Like, why that direction?"
+  . Quest {
+    ?! DirectionOfGrowth
+    "directionOfGrowth" {
+      .achieve
+      . VZ "Absolutely, I'm with $username on this."
+      . VZ "It's about the growth direction along this line."
+      . Nick "Gotcha, so the numbers increase as we go right?"
+      . Nick "Makes sense. Is that just how it is?"
+      . @orIsItLike Nick "Or could it be like how we read, left to right, just out of habit?"
+      . Nick "I mean it's not the same everywhere. Like in Japan compared to here."
+      . Quest2 {
+        ?
+        "It's a cultural habit" {
+            .achieve
+            . VZ "Totally cultural. I think that's what they call a convention."
+            . Nick "That's why they can be so confusing."
+            . VZ "Right, there's no real natural reason for it."
+            . Nick "Cheers, $username and VZ, you've both cleared this up for me."
+            . @let .let xAxisGrowth unmount
+            . .let coordinatePlane show
+            . .done
+        } 
+        "It's the nature of numbers" {
+            Nick "Really? 🤔"
+            . Nick "So, I'm thinking, why not just switch up the number line?"
+            . Nick "It could totally work, don’t you think?"
+            . Nick "Maybe we gotta chew on that idea for a bit, $username."
+            . _ {
+                -> @let
+            }
+        }
+      }
+    }
+    "east" {
+      Nick "You mean this direction hints at a compass direction, even without a map?"
+      . Nick "I figure compass directions are only meaningful on maps."
+      . @butIHaveAnIdea VZ "But here's a thought."
+      . VZ "I guess the numbers always increase in this direction."
+      . Nick "So you think it's the growth direction, right? Yeah, that adds up."
+      after 2sec
+      Nick "You know what I've been pondering?"
+      . Nick "Is it in the nature of numbers to naturally grow to the right?"
+      . _ {
+          -> @orIsItLike
+      }
+    }
+    * {
+      Nick "Hmm?"
+      . Nick "I'm not so sure myself."
+      . _ {
+          -> @butIHaveAnIdea
+      }
+    }
+  }
+}

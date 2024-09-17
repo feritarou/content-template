@@ -1,0 +1,196 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json?v=2",
+  "tags": [
+    "coordinatePlane",
+    "xAxis",
+    "yAxis",
+    "origin",
+    "markXAxis",
+    "markYAxis",
+    "markOrigin"
+  ],
+  "self": {
+    "class": "UnitRoot",
+    "context": "dev"
+  },
+  "children": [
+    {
+      "self": {
+        "class": "Exercise"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
+                "class": "SelectImagePart",
+                "sampleSolution": "xAxis",
+                "instructions": "Select the x-axis",
+                "watchedInput": "selector",
+                "whenDone": {
+                  "let": {
+                    "coordinatePlane": "HIDE",
+                    "xAxisGrowth": "SHOW"
+                  }
+                },
+                "outroFlow": "xAxis.flow"
+              }
+            }
+          ]
+        },
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
+                "class": "SelectImagePart",
+                "sampleSolution": "yAxis",
+                "instructions": "Select the y-axis",
+                "watchedInput": "selector",
+                "outroFlow": "yAxis",
+                "whenStarted": {
+                  "let": {
+                    "coordinatePlane": "SHOW"
+                  }
+                },
+                "whenDone": {
+                  "let": {
+                    "coordinatePlane": "HIDE",
+                    "yAxisInfinity": "SHOW"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
+                "class": "SelectImagePart",
+                "sampleSolution": "origin",
+                "instructions": "Select the origin",
+                "watchedInput": "selector",
+                "whenStarted": {
+                  "let": {
+                    "coordinatePlane": "SHOW",
+                    "xAxis": "UNMOUNT",
+                    "yAxis": "UNMOUNT",
+                    "yAxisInfinity": "UNMOUNT",
+                    "xAxisGrowth": "UNMOUNT"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self": {
+        "id": "coordinatePlane",
+        "class": "Image",
+        "src": "https://storage.googleapis.com/mastory-content/units/CoordinatePlane/orthogonal_number_lines.png"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Selector",
+            "id": "selector",
+            "multiSelect": false
+          },
+          "children": [
+            {
+              "self": {
+                "class": "EmptyArea",
+                "id": "xAxis",
+                "absolute": {
+                  "bottom": "51%",
+                  "left": "2%",
+                  "height": "5px",
+                  "width": "95%"
+                }
+              }
+            },
+            {
+              "self": {
+                "class": "EmptyArea",
+                "id": "yAxis",
+                "absolute": {
+                  "bottom": "2%",
+                  "left": "49%",
+                  "height": "95%",
+                  "width": "5px"
+                }
+              }
+            },
+            {
+              "self": {
+                "class": "EmptyArea",
+                "id": "origin",
+                "absolute": {
+                  "bottom": "50%",
+                  "left": "49.1%",
+                  "height": "20px",
+                  "width": "20px"
+                }
+              }
+            },
+            {
+              "self": {
+                "class": "EmptyArea",
+                "id": "unit",
+                "absolute": {
+                  "bottom": "50%",
+                  "left": "53.25%",
+                  "height": "20px",
+                  "width": "20px"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self": {
+        "id": "xAxisGrowth",
+        "class": "Image",
+        "initiallyHidden": true,
+        "src": "https://storage.googleapis.com/mastory-content/units/CoordinatePlane/orthogonal_lines_xAxis_growth.png"
+      }
+    },
+    {
+      "self": {
+        "id": "xAxisInfinity",
+        "class": "Image",
+        "initiallyHidden": true,
+        "src": "https://storage.googleapis.com/mastory-content/units/CoordinatePlane/orthogonal_lines_xAxis_infinity.png"
+      }
+    },
+    {
+      "self": {
+        "id": "yAxisInfinity",
+        "class": "Image",
+        "initiallyHidden": true,
+        "src": "https://storage.googleapis.com/mastory-content/units/CoordinatePlane/orthogonal_lines_yAxis_infinity.png"
+      }
+    },
+    {
+      "self": {
+        "id": "yAxisGrowth",
+        "class": "Image",
+        "initiallyHidden": true,
+        "src": "https://storage.googleapis.com/mastory-content/units/CoordinatePlane/orthogonal_lines_yAxis_growth.png"
+      }
+    }
+  ]
+}

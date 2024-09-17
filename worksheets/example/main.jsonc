@@ -1,10 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/worksheet.json?dummy=1",
   "exercises": [
+    "BasicConceptsCoordinatePlaneExercise4",
     {
       "id": "SignsAdditionExercise1",
       "tags": [
-        "integer",
+        "integers",
+        "basic"
+      ]
+    },
+    {
+      "id": "SignsAdditionExercise1",
+      "tags": [
+        "integers",
         "absZeroToHundred",
         "allPositive"
       ]
@@ -12,7 +20,7 @@
     {
       "id": "SignsAdditionExercise1",
       "tags": [
-        "integer",
+        "integers",
         "absZeroToHundred",
         "mixedSigns"
       ]
@@ -20,7 +28,7 @@
     {
       "id": "SignsAdditionExercise1",
       "tags": [
-        "integer",
+        "integers",
         "absZeroToHundred",
         "allNegative"
       ]
@@ -28,14 +36,14 @@
     {
       "id": "SignsAdditionExercise1",
       "tags": [
-        "integer",
+        "integers",
         "mixedSigns"
       ]
     },
     {
       "id": "SignsAdditionExercise1",
       "tags": [
-        "integer",
+        "integers",
         "mixedSigns"
       ]
     },
@@ -52,7 +60,7 @@
       "tags": [
         "absZeroToHundred",
         "twoDigit",
-        "allPositive"
+        "mixedSigns"
       ]
     },
     {
