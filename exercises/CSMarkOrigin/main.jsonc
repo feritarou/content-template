@@ -22,8 +22,12 @@
                 "instructions": "Mark the coordinates origin!",
                 "watchedInput": "cs",
                 "sampleElement": [
-                  0,
-                  0
+                  "Flag",
+                  {
+                    "x": 0,
+                    "y": 0,
+                    "flagColor": "#f3a3c6"
+                  }
                 ]
               }
             }
