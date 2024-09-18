@@ -17,6 +17,24 @@
           "children": [
             {
               "self": {
+                "class": "SampleSolve",
+                "instructions": "Enter the coordinates of the origin!",
+                "watchedInput": "coords",
+                "sampleSolution": [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
                 "class": "SampleSolveArrayElement",
                 "numericalTolerance": 0.3,
                 "instructions": "Mark the coordinates origin!",
@@ -34,6 +52,14 @@
           ]
         }
       ]
+    },
+    {
+      "self": {
+        "class": "CoordinatesInput2",
+        "id": "coords",
+        "minimal": true,
+        "label": "Coordinates of the origin: "
+      }
     },
     {
       "self": {

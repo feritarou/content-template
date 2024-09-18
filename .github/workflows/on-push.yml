@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: mastoryberlin/content-action@main
         with:
-          # scope: gerd
+          # scope: ${{ vars.MASTORY_SCOPE }} # defaults to your GitHub user name
           api_key: ${{ secrets.MASTORY_API_KEY }}

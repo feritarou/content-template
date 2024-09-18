@@ -1,7 +1,0 @@
-{
-  "$schema": "../../../../schemas/story.json",
-  "units": [
-    "Key",
-    "Drone"
-  ]
-}
