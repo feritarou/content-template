@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/fragment/unit.json",
+  "self": {
+    "class": "UnitRoot",
+    "context": "getting started"
+  },
+  "children": [
+    {
+      "self": {
+        "class": "Exercise"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Step"
+          },
+          "children": [
+            {
+              "self": {
+                "class": "StubActivity",
+                "instructions": "Click the submit button to proceed!"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "self": {
+        "class": "Layout",
+        "direction": "vertical"
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Text",
+            "text": "Hello World!",
+            "size": "huge",
+            "minimal": true
+          }
+        },
+        {
+          "self": {
+            "class": "Text",
+            "size": "large",
+            "text": "Your setup seems to work. Get ready to start creating!"
+          }
+        }
+      ]
+    }
+  ]
+}
