@@ -1,8 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/worksheet.json?dummy=1",
   "exercises": [
-    "BasicConceptsCoordinatePlaneExercise4",
-    {
+    "StartToDevExercise", // an exercise as simple as possible
+    "CSMarkOrigin",       // spot the coordinate origin and enter its coordinates
+    "PlusMinus",          // vector addition of two 2-tuples
+    {                     // same as above, but used with tags to influence parametrization
+      "id": "PlusMinus",
+      "tags": [
+        "integers"
+      ]
+    },
+    {                     // addition of signed numbers; various parametrization variants
       "id": "SignsAdditionExercise1",
       "tags": [
         "integers",

@@ -24,14 +24,8 @@
                 "instructions": "Calculate the resulting vector after adding the two given ones!",
                 "watchedInput": "vectorSum",
                 "sampleSolution": [
-                  {
-                    {aPlus2
-                    }
-                  },
-                  {
-                    {bPlus5
-                    }
-                  }
+                  {{aPlus2}},
+                  {{bPlus5}}
                 ]
               }
             }
@@ -43,7 +37,7 @@
       "self": {
         "class": "CoordinatesInput2",
         "id": "vectorSum",
-        "label": "Enter the coordinates of the point (2, 5) + ({{a}}, {{b}}) [Hint: it's ({{aPlus2}}, {{bPlus5}})]!",
+        "label": "Enter the coordinates of the point (2, 5) + ({{a}}, {{b}})!",
         "minimal": true
       }
     }

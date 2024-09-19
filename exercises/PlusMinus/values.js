@@ -1,5 +1,5 @@
 export default function ({ tags }, { randomNumber }) {
-  const domain = tags.includes('integer')
+  const domain = tags.includes('integers')
     ? 'Integers'
     : 'RationalNumbers'
   let digits
